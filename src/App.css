@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --color-primary: #4658a9;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #dce1ff;
+  --color-on-primary-container: #00115a;
+
+  --color-secondary: #5a5d71;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #dfe1f9;
+  --color-on-secondary-container: #171b2c;
+
+  --color-tertiary: #76536e;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #ffd6f5;
+  --color-on-tertiary-container: #2d1229;
+
+  --color-error: #ba1b1b;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad4;
+  --color-on-error-container: #410001;
+
+  --color-background: #fefbff;
+  --color-on-background: #1b1b1f;
+
+  --color-surface: #fefbff;
+  --color-on-surface: #1b1b1f;
+
+  --color-surface-1: #fefbff;
+  --color-surface-2: #fefbff;
+  --color-surface-3: #fefbff;
+  --color-surface-4: #fefbff;
+  --color-surface-6: #fefbff;
+  --color-surface-8: #fefbff;
+  --color-surface-12: #fefbff;
+  --color-surface-16: #fefbff;
+  --color-surface-24: #fefbff;
+
+  --color-surface-variant: #e2e1ec;
+  --color-on-surface-variant: #45464f;
+
+  --color-outline: #76767f;
+
+  --color-disabled: #1b1b1f1f;
+  --color-on-disabled: #1b1b1f61;
+
+  --color-inverse-surface: #303034;
+  --color-inverse-on-surface: #f3f0f5;
+  --color-primary-inverse: #b8c4ff;
+
+  --color-modal-background: #00000052;
+
+  --box-shadow-1: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  --box-shadow-2: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  --box-shadow-3: 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+    0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+  --box-shadow-4: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  --box-shadow-6: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+    0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  --box-shadow-8: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  --box-shadow-12: 0 12px 17px 2px rgba(0, 0, 0, 0.14),
+    0 5px 22px 4px rgba(0, 0, 0, 0.12), 0 7px 8px -4px rgba(0, 0, 0, 0.2);
+  --box-shadow-16: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  --box-shadow-24: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+
+  --column-width-single: 320px;
+  --column-width-double: 648px;
+  --column-width-triple: 976px;
+}
+
+/* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* css reset */
+
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: var(--color-on-background);
+  background-color: var(--color-background);
+  overflow-y: scroll;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  color: inherit;
+  background-color: inherit;
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
