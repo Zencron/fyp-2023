@@ -1,6 +1,7 @@
 import styles from "./MainGrid.module.css";
 
 import Header from "/src/containers/header/Header";
+import HomeContainer from "/src/containers/homeContainer/HomeContainer";
 
 export default function MainGrid() {
   return (
@@ -8,7 +9,9 @@ export default function MainGrid() {
       <div className={styles.header}>
         <Header />
       </div>
-      <div className={styles.content}>content</div>
+      <div className={styles.content}>
+        <HomeContainer />
+      </div>
     </div>
   );
 }

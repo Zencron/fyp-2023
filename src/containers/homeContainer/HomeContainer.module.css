@@ -1,0 +1,13 @@
+.homeContainer {
+  margin-top: 8px;
+}
+
+.mainCard {
+  padding: 16px;
+  display: grid;
+  gap: 8px;
+}
+
+.title {
+  font-size: 1.2em;
+}
