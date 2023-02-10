@@ -1,0 +1,14 @@
+.mainGrid {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr auto 1fr;
+}
+
+.header {
+  grid-column: 1/4;
+}
+
+.content {
+  grid-column: 2/3;
+  width: var(--column-width-triple);
+}
