@@ -1,0 +1,23 @@
+.filledCard {
+  color: var(--color-on-surface-variant);
+  background-color: var(--color-surface-variant);
+  border-radius: 12px;
+  height: 100%;
+  width: 100%;
+}
+
+.secondaryContainerFilledCard {
+  color: var(--color-on-secondary-container);
+  background-color: var(--color-secondary-container);
+  border-radius: 12px;
+  height: 100%;
+  width: 100%;
+}
+
+.tertiaryContainerFilledCard {
+  color: var(--color-on-tertiary-container);
+  background-color: var(--color-tertiary-container);
+  border-radius: 12px;
+  height: 100%;
+  width: 100%;
+}
