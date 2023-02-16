@@ -24,6 +24,20 @@ export default function NavigationBar({ currentTab, setCurrentTab }) {
       >
         Videos
       </NavigationChip>
+      <NavigationChip
+        tab="diy"
+        currentTab={currentTab}
+        setCurrentTab={setCurrentTab}
+      >
+        DIY
+      </NavigationChip>
+      <NavigationChip
+        tab="quiz"
+        currentTab={currentTab}
+        setCurrentTab={setCurrentTab}
+      >
+        Quiz
+      </NavigationChip>
     </div>
   );
 }

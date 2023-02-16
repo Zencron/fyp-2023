@@ -7,6 +7,11 @@ import HomeContainer from "/src/containers/homeContainer/HomeContainer";
 
 export default function MainGrid() {
   const [currentTab, setCurrentTab] = useState("home");
+  const homeTabVisible = currentTab === "home";
+  const learnTabVisible = currentTab === "learn";
+  const videosTabVisible = currentTab === "videos";
+  const diyTabVisible = currentTab === "diy";
+  const quizTabVisible = currentTab === "quiz";
   return (
     <div className={styles.mainGrid}>
       <div className={styles.header}>
@@ -14,7 +19,11 @@ export default function MainGrid() {
       </div>
       <div className={styles.content}>
         <NavigationBar currentTab={currentTab} setCurrentTab={setCurrentTab} />
-        <HomeContainer />
+        {homeTabVisible && <HomeContainer />}
+        {learnTabVisible && <div>learn</div>}
+        {videosTabVisible && <div>videos</div>}
+        {diyTabVisible && <div>diy</div>}
+        {quizTabVisible && <div>quiz</div>}
       </div>
     </div>
   );
