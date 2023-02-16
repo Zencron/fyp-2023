@@ -1,0 +1,50 @@
+.navigationBar {
+  margin: 8px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.navigationChip {
+  position: relative;
+  background-color: inherit;
+  color: inherit;
+  border: var(--color-outline) 1px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 32px;
+  padding: 0 15px 0 15px;
+  user-select: none;
+}
+
+.navigationChip::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: var(--color-on-primary-container);
+}
+
+.navigationChip:hover::after {
+  opacity: 0.08;
+}
+
+.navigationChip:focus-visible::after {
+  opacity: 0.12;
+}
+
+.navigationChip:active::after {
+  opacity: 0.12;
+}
+
+.selected {
+  border: none;
+  padding: 0 16px 0 16px;
+  background-color: var(--color-secondary-container);
+  color: var(--color-on-secondary-container);
+  pointer-events: none;
+}
