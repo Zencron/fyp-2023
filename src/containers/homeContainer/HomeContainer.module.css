@@ -5,9 +5,25 @@
 .mainCard {
   padding: 16px;
   display: grid;
+  grid-template-columns: auto 300px;
+  grid-template-rows: auto auto auto auto;
   gap: 8px;
 }
 
 .title {
+  font-size: 1.6em;
+}
+
+.subtitle {
   font-size: 1.2em;
+}
+
+.mosfetStructureImage {
+  border: 1px var(--color-outline) solid;
+  padding: 8px;
+}
+
+.mosfetStructureImageText {
+  font-size: 0.9em;
+  font-style: italic;
 }
