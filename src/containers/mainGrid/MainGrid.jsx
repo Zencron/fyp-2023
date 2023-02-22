@@ -4,6 +4,7 @@ import { useState } from "react";
 import Header from "/src/containers/header/Header";
 import NavigationBar from "/src/containers/navigationBar/NavigationBar";
 import HomeContainer from "/src/containers/homeContainer/HomeContainer";
+import VideosContainer from "/src/containers/videosContainer/VideosContainer";
 
 export default function MainGrid() {
   const [currentTab, setCurrentTab] = useState("home");
@@ -21,7 +22,7 @@ export default function MainGrid() {
         <NavigationBar currentTab={currentTab} setCurrentTab={setCurrentTab} />
         {homeTabVisible && <HomeContainer />}
         {learnTabVisible && <div>learn</div>}
-        {videosTabVisible && <div>videos</div>}
+        {videosTabVisible && <VideosContainer />}
         {diyTabVisible && <div>diy</div>}
         {quizTabVisible && <div>quiz</div>}
       </div>
