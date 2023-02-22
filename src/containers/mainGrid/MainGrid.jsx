@@ -5,6 +5,8 @@ import Header from "/src/containers/header/Header";
 import NavigationBar from "/src/containers/navigationBar/NavigationBar";
 import HomeContainer from "/src/containers/homeContainer/HomeContainer";
 import VideosContainer from "/src/containers/videosContainer/VideosContainer";
+import QuizContainer from "/src/containers/quizContainer/QuizContainer";
+import DIYContainer from "/src/containers/diyContainer/DIYContainer";
 
 export default function MainGrid() {
   const [currentTab, setCurrentTab] = useState("home");
@@ -23,8 +25,8 @@ export default function MainGrid() {
         {homeTabVisible && <HomeContainer />}
         {learnTabVisible && <div>learn</div>}
         {videosTabVisible && <VideosContainer />}
-        {diyTabVisible && <div>diy</div>}
-        {quizTabVisible && <div>quiz</div>}
+        {diyTabVisible && <DIYContainer />}
+        {quizTabVisible && <QuizContainer />}
       </div>
     </div>
   );
