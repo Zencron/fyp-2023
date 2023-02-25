@@ -1,3 +1,8 @@
 .mainCard {
   padding: 16px;
 }
+
+.formGrid {
+  display: grid;
+  gap: 8px;
+}
