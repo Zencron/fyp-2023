@@ -2,6 +2,7 @@ import styles from "./QuizContainer.module.css";
 import { useState } from "react";
 
 import FilledCard from "/src/components/filledCard/FilledCard";
+import AssistChip from "/src/components/assistChip/AssistChip";
 
 export default function QuizContainer() {
   const [question1Value, setQuestion1Value] = useState(null);
@@ -17,6 +18,11 @@ export default function QuizContainer() {
     if (event.target.checked) {
       setQuestion2Value(event.target.value);
     }
+  }
+
+  function handleSubmitQuiz() {
+    console.log(question1Value);
+    console.log(question2Value);
   }
 
   return (
@@ -94,6 +100,9 @@ export default function QuizContainer() {
                 />
                 This is something about MOSFETs number 3
               </label>
+            </div>
+            <div>
+              <AssistChip onClick={handleSubmitQuiz}>Submit</AssistChip>
             </div>
           </form>
         </div>
