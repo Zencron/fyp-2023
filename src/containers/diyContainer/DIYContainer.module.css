@@ -1,3 +1,28 @@
 .mainCard {
   padding: 16px;
+  display: grid;
+  gap: 8px;
+}
+
+.title {
+  font-size: 1.6em;
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 50px 1fr 100px;
+  width: 600px;
+}
+
+.tableText {
+  text-align: center;
+  border: 1px black solid;
+  padding: 4px;
+}
+
+.tableTextBold {
+  text-align: center;
+  font-weight: bold;
+  border: 1px black solid;
+  padding: 4px;
 }
