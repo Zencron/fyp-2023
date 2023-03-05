@@ -1,5 +1,14 @@
 .homeContainer {
   margin-top: 8px;
+  display: grid;
+  grid-template-columns: var(--column-width-single) var(--column-width-single) var(
+      --column-width-single
+    );
+  gap: 8px;
+}
+
+.mainCardContainer {
+  grid-column: 1/4;
 }
 
 .mainCard {
@@ -26,4 +35,10 @@
 .mosfetStructureImageText {
   font-size: 0.9em;
   font-style: italic;
+}
+
+.infoCard {
+  padding: 16px;
+  display: grid;
+  gap: 8px;
 }
