@@ -42,3 +42,7 @@
   display: grid;
   gap: 8px;
 }
+
+.infoImage {
+  border: 1px var(--color-outline) solid;
+}

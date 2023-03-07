@@ -1,8 +1,12 @@
 import styles from "./HomeContainer.module.css";
 
 import FilledCard from "/src/components/filledCard/FilledCard";
+import AssistChip from "/src/components/assistChip/AssistChip";
 
 import mosfetStructure from "/src/assets/MOSFET_Structure.png";
+import operatingRegionsInfo from "/src/assets/operating_regions_info.jpg";
+import watchVideosInfo from "/src/assets/watch_videos_info.jpg";
+import buckConverterInfo from "/src/assets/buck_converter_info.png";
 
 export default function HomeContainer() {
   return (
@@ -59,49 +63,59 @@ export default function HomeContainer() {
       </div>
       <FilledCard>
         <div className={styles.infoCard}>
-          <div className={styles.title}>MOSFET</div>
           <div className={styles.subtitle}>
-            metal–oxide–semiconductor field-effect transistor
+            Learn More About MOSFET Operating Regions
           </div>
-          <br />
+          <img
+            src={operatingRegionsInfo}
+            alt="operating regions graph"
+            className={styles.infoImage}
+          />
           <div>
-            The MOSFET is a type of field-effect transistor (FET), most commonly
-            fabricated by the controlled oxidation of silicon. It has an
-            insulated gate, the voltage of which determines the conductivity of
-            the device.
+            A MOSFET is said to operate in 3 regions, cutoff, triode and
+            saturation,based on the condition of the inversion layer existing
+            between the source and drain.
             <br />
+          </div>
+          <div>
+            <AssistChip>Learn</AssistChip>
           </div>
         </div>
       </FilledCard>
       <FilledCard>
         <div className={styles.infoCard}>
-          <div className={styles.title}>MOSFET</div>
-          <div className={styles.subtitle}>
-            metal–oxide–semiconductor field-effect transistor
-          </div>
-          <br />
+          <div className={styles.subtitle}>Watch Videos</div>
+          <img
+            src={watchVideosInfo}
+            alt="mosfet as a switch"
+            className={styles.infoImage}
+          />
           <div>
-            The MOSFET is a type of field-effect transistor (FET), most commonly
-            fabricated by the controlled oxidation of silicon. It has an
-            insulated gate, the voltage of which determines the conductivity of
-            the device.
-            <br />
+            Learn about MOSFETs and Buck Converters - The fundamentals of Power
+            Electronics. Watch informative videos and enhance your knowledge!
+            Learn about MOSFETs used as switches, buck converters, and more!
+          </div>
+          <div>
+            <AssistChip>Watch</AssistChip>
           </div>
         </div>
       </FilledCard>
       <FilledCard>
         <div className={styles.infoCard}>
-          <div className={styles.title}>MOSFET</div>
-          <div className={styles.subtitle}>
-            metal–oxide–semiconductor field-effect transistor
-          </div>
-          <br />
+          <div className={styles.subtitle}>Make a DIY Buck converter</div>
+          <img
+            src={buckConverterInfo}
+            alt="buck converter info"
+            className={styles.infoImage}
+          />
           <div>
             The MOSFET is a type of field-effect transistor (FET), most commonly
             fabricated by the controlled oxidation of silicon. It has an
             insulated gate, the voltage of which determines the conductivity of
             the device.
-            <br />
+          </div>
+          <div>
+            <AssistChip>Make</AssistChip>
           </div>
         </div>
       </FilledCard>
