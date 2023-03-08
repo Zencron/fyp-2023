@@ -28,9 +28,39 @@ export default function QuizContainer() {
     setQuestion5Value(event.target.value);
   }
 
+  function calculateScore() {
+    let score = 0;
+    if (question1Value === "CSS") {
+      score += 1;
+    }
+    if (question2Value === "CSS") {
+      score += 1;
+    }
+    if (question3Value === "CSS") {
+      score += 1;
+    }
+    if (question4Value === "CSS") {
+      score += 1;
+    }
+    if (question5Value === "CSS") {
+      score += 1;
+    }
+    return score;
+  }
+
   function handleSubmitQuiz() {
-    console.log(question1Value);
-    console.log(question2Value);
+    if (
+      question1Value &&
+      question2Value &&
+      question3Value &&
+      question4Value &&
+      question5Value
+    ) {
+      const score = calculateScore();
+      alert(`Your final score is ${score}/5`);
+    } else {
+      alert("Please answer all questions before submitting!");
+    }
   }
 
   return (
