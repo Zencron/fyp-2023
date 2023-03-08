@@ -23,7 +23,7 @@ export default function MainGrid() {
       </div>
       <div className={styles.content}>
         <NavigationBar currentTab={currentTab} setCurrentTab={setCurrentTab} />
-        {homeTabVisible && <HomeContainer />}
+        {homeTabVisible && <HomeContainer setCurrentTab={setCurrentTab} />}
         {learnTabVisible && <LearnContainer />}
         {videosTabVisible && <VideosContainer />}
         {diyTabVisible && <DIYContainer />}

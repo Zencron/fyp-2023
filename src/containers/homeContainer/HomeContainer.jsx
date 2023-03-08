@@ -8,7 +8,16 @@ import operatingRegionsInfo from "/src/assets/operating_regions_info.jpg";
 import watchVideosInfo from "/src/assets/watch_videos_info.jpg";
 import buckConverterInfo from "/src/assets/buck_converter_info.png";
 
-export default function HomeContainer() {
+export default function HomeContainer({ setCurrentTab }) {
+  function gotoLearnTab() {
+    setCurrentTab("learn");
+  }
+  function gotoVideosTab() {
+    setCurrentTab("videos");
+  }
+  function gotoDIYTab() {
+    setCurrentTab("diy");
+  }
   return (
     <div className={styles.homeContainer}>
       <div className={styles.mainCardContainer}>
@@ -78,7 +87,7 @@ export default function HomeContainer() {
             <br />
           </div>
           <div>
-            <AssistChip>Learn</AssistChip>
+            <AssistChip onClick={gotoLearnTab}>Learn</AssistChip>
           </div>
         </div>
       </FilledCard>
@@ -96,7 +105,7 @@ export default function HomeContainer() {
             Learn about MOSFETs used as switches, buck converters, and more!
           </div>
           <div>
-            <AssistChip>Watch</AssistChip>
+            <AssistChip onClick={gotoVideosTab}>Watch</AssistChip>
           </div>
         </div>
       </FilledCard>
@@ -115,7 +124,7 @@ export default function HomeContainer() {
             the device.
           </div>
           <div>
-            <AssistChip>Make</AssistChip>
+            <AssistChip onClick={gotoDIYTab}>Make</AssistChip>
           </div>
         </div>
       </FilledCard>
