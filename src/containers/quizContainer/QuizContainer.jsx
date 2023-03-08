@@ -9,15 +9,11 @@ export default function QuizContainer() {
   const [question2Value, setQuestion2Value] = useState(null);
 
   function handleQuestion1(event) {
-    if (event.target.checked) {
-      setQuestion1Value(event.target.value);
-    }
+    setQuestion1Value(event.target.value);
   }
 
   function handleQuestion2(event) {
-    if (event.target.checked) {
-      setQuestion2Value(event.target.value);
-    }
+    setQuestion2Value(event.target.value);
   }
 
   function handleSubmitQuiz() {
