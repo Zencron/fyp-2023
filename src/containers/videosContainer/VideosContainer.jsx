@@ -5,7 +5,7 @@ import FilledCard from "/src/components/filledCard/FilledCard";
 export default function VideosContainer() {
   return (
     <div>
-      <FilledCard>
+      <FilledCard colour="primaryContainer">
         <div className={styles.mainCard}>
           <div className={styles.title}>MOSFET as a switch</div>
           <div>

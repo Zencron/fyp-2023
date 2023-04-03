@@ -6,7 +6,7 @@ import AssistChip from "/src/components/assistChip/AssistChip";
 export default function LearnContainer() {
   return (
     <div className={styles.learnContainer}>
-      <FilledCard>
+      <FilledCard colour="primaryContainer">
         <div className={styles.mainCard}>learn</div>
       </FilledCard>
     </div>

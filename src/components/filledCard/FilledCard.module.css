@@ -21,3 +21,11 @@
   height: 100%;
   width: 100%;
 }
+
+.primaryContainerFilledCard {
+  color: var(--color-on-primary-container);
+  background-color: var(--color-primary-container);
+  border-radius: 12px;
+  height: 100%;
+  width: 100%;
+}

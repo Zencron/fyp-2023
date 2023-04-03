@@ -65,7 +65,7 @@ export default function QuizContainer() {
 
   return (
     <div>
-      <FilledCard>
+      <FilledCard colour="primaryContainer">
         <div className={styles.mainCard}>
           <form className={styles.formGrid}>
             <h2>MOSFET Quiz 1</h2>

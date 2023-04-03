@@ -21,7 +21,7 @@ export default function HomeContainer({ setCurrentTab }) {
   return (
     <div className={styles.homeContainer}>
       <div className={styles.mainCardContainer}>
-        <FilledCard>
+        <FilledCard colour="primaryContainer">
           <div className={styles.mainCard}>
             <div>
               <div className={styles.title}>MOSFET</div>
@@ -70,7 +70,7 @@ export default function HomeContainer({ setCurrentTab }) {
           </div>
         </FilledCard>
       </div>
-      <FilledCard>
+      <FilledCard colour="primaryContainer">
         <div className={styles.infoCard}>
           <div className={styles.subtitle}>
             Learn More About MOSFET Operating Regions
@@ -91,7 +91,7 @@ export default function HomeContainer({ setCurrentTab }) {
           </div>
         </div>
       </FilledCard>
-      <FilledCard>
+      <FilledCard colour="primaryContainer">
         <div className={styles.infoCard}>
           <div className={styles.subtitle}>Watch Videos</div>
           <img
@@ -109,7 +109,7 @@ export default function HomeContainer({ setCurrentTab }) {
           </div>
         </div>
       </FilledCard>
-      <FilledCard>
+      <FilledCard colour="primaryContainer">
         <div className={styles.infoCard}>
           <div className={styles.subtitle}>Make a DIY Buck converter</div>
           <img

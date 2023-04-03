@@ -7,7 +7,7 @@ import circuit1 from "/src/assets/circuit1.jpg";
 export default function DIYContainer() {
   return (
     <div>
-      <FilledCard>
+      <FilledCard colour="primaryContainer">
         <div className={styles.mainCard}>
           <div className={styles.title}>DIY Buck Converter</div>
           <div>
