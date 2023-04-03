@@ -1,6 +1,14 @@
 .learnContainer {
   display: grid;
   gap: 8px;
+  grid-template-columns: 1fr 2fr;
+  align-items: start;
+}
+
+.navigationCard {
+  padding: 16px;
+  display: grid;
+  gap: 8px;
 }
 
 .mainCard {
