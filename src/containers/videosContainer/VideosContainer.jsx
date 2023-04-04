@@ -4,7 +4,49 @@ import FilledCard from "/src/components/filledCard/FilledCard";
 
 export default function VideosContainer() {
   return (
-    <div>
+    <div className={styles.videosContainer}>
+      <FilledCard colour="primaryContainer">
+        <div className={styles.mainCard}>
+          <div className={styles.title}>How a MOSFET works</div>
+          <div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Bfvyj88Hs_o"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div>
+            At the core of MOSFET operation is the gate terminal, which controls
+            the flow of current between the source and drain terminals. The gate
+            is separated from the source and drain by a thin layer of oxide,
+            which acts as an insulator.
+            <br />
+            <br />
+            As voltage is applied to the gate, an electric field is created
+            which causes electrons to either accumulate or deplete in the
+            channel region. This allows the MOSFET to switch between an ON
+            state, where current can flow freely from the source to the drain,
+            and an OFF state, where little to no current can flow.
+            <br />
+            <br />
+            MOSFETs have several key advantages over other types of transistors,
+            including their low power consumption and fast switching speeds. As
+            a result, they are commonly used in a variety of applications, such
+            as power supplies, motor control circuits, and audio amplifiers.
+            <br />
+            <br />
+            In summary, MOSFETs are an important component in modern
+            electronics, and their ability to efficiently control current flow
+            makes them a versatile and valuable tool for a wide range of
+            applications. We hope this video has helped you to better understand
+            the basic operation and structure of MOSFETs.
+          </div>
+        </div>
+      </FilledCard>
       <FilledCard colour="primaryContainer">
         <div className={styles.mainCard}>
           <div className={styles.title}>MOSFET as a switch</div>
