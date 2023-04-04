@@ -44,37 +44,44 @@ export default function DIYContainer() {
             <div className={styles.tableText}>1</div>
           </div>
           <div className={styles.tableRow}>
-            <div className={styles.tableText}>3</div>
+            <div className={styles.tableText}>4</div>
             <div className={styles.tableText}>0.1uF capacitor</div>
             <div className={styles.tableText}>1</div>
           </div>
           <div className={styles.tableRow}>
-            <div className={styles.tableText}>4</div>
+            <div className={styles.tableText}>5</div>
             <div className={styles.tableText}>
               N-channel MOSFET (IRF540 / IRFZ44N)
             </div>
             <div className={styles.tableText}>1</div>
           </div>
           <div className={styles.tableRow}>
-            <div className={styles.tableText}>5</div>
+            <div className={styles.tableText}>6</div>
             <div className={styles.tableText}>
               1N5819 / 1N5822 Schottky diode
             </div>
             <div className={styles.tableText}>1</div>
           </div>
           <div className={styles.tableRow}>
-            <div className={styles.tableText}>6</div>
+            <div className={styles.tableText}>7</div>
             <div className={styles.tableText}>100uH inductor</div>
             <div className={styles.tableText}>1</div>
           </div>
           <div className={styles.tableRow}>
-            <div className={styles.tableText}>7</div>
+            <div className={styles.tableText}>8</div>
             <div className={styles.tableText}>47K potentiometer</div>
             <div className={styles.tableText}>1</div>
           </div>
           <div className={styles.tableRow}>
-            <div className={styles.tableText}>8</div>
+            <div className={styles.tableText}>9</div>
             <div className={styles.tableText}>1K resistor</div>
+            <div className={styles.tableText}>1</div>
+          </div>
+          <div className={styles.tableRow}>
+            <div className={styles.tableText}>10</div>
+            <div className={styles.tableText}>
+              1000 uF electrolytic capacitor
+            </div>
             <div className={styles.tableText}>1</div>
           </div>
           <img src={circuit1} alt="circuit1" width={300} />
