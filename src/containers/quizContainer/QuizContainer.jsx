@@ -30,19 +30,19 @@ export default function QuizContainer() {
 
   function calculateScore() {
     let score = 0;
-    if (question1Value === "CSS") {
+    if (question1Value === "1") {
       score += 1;
     }
-    if (question2Value === "CSS") {
+    if (question2Value === "4") {
       score += 1;
     }
-    if (question3Value === "CSS") {
+    if (question3Value === "2") {
       score += 1;
     }
-    if (question4Value === "CSS") {
+    if (question4Value === "2") {
       score += 1;
     }
-    if (question5Value === "CSS") {
+    if (question5Value === "1") {
       score += 1;
     }
     return score;
@@ -70,42 +70,56 @@ export default function QuizContainer() {
           <form className={styles.formGrid}>
             <h2>MOSFET Quiz 1</h2>
             <div>
-              <div>1) Choose your favorite Web language</div>
+              <div>1) What does MOSFET stand for?</div>
               <label>
                 <input
                   type="radio"
                   name="question1"
-                  value="HTML"
-                  checked={question1Value === "HTML"}
+                  value="1"
+                  checked={question1Value === "1"}
                   onChange={handleQuestion1}
                 />
-                HTML
+                Metal-Oxide Semiconductor Field Effect Transistor
               </label>
               <br />
               <label>
                 <input
                   type="radio"
                   name="question1"
-                  value="CSS"
-                  checked={question1Value === "CSS"}
+                  value="2"
+                  checked={question1Value === "2"}
                   onChange={handleQuestion1}
                 />
-                CSS
+                Microscopic Organic Semiconductor Field Effect Transistor
               </label>
               <br />
               <label>
                 <input
                   type="radio"
                   name="question1"
-                  value="JavaScript"
-                  checked={question1Value === "JavaScript"}
+                  value="3"
+                  checked={question1Value === "3"}
                   onChange={handleQuestion1}
                 />
-                JavaScript
+                Micro-Oscillating Semiconductor Field Effect Transistor
+              </label>
+              <br />
+              <label>
+                <input
+                  type="radio"
+                  name="question1"
+                  value="4"
+                  checked={question1Value === "4"}
+                  onChange={handleQuestion1}
+                />
+                Mono-Oxide Semiconductor Field Effect Transistor
               </label>
             </div>
             <div>
-              <div>2) Explain something about MOSFETs</div>
+              <div>
+                2) Which region of a MOSFET is responsible for controlling the
+                flow of current?
+              </div>
               <label>
                 <input
                   type="radio"
@@ -114,7 +128,7 @@ export default function QuizContainer() {
                   checked={question2Value === "1"}
                   onChange={handleQuestion2}
                 />
-                This is something about MOSFETs number 1
+                Substrate
               </label>
               <br />
               <label>
@@ -125,7 +139,7 @@ export default function QuizContainer() {
                   checked={question2Value === "2"}
                   onChange={handleQuestion2}
                 />
-                This is something about MOSFETs number 2
+                Drain
               </label>
               <br />
               <label>
@@ -136,12 +150,23 @@ export default function QuizContainer() {
                   checked={question2Value === "3"}
                   onChange={handleQuestion2}
                 />
-                This is something about MOSFETs number 3
+                Source
+              </label>
+              <br />
+              <label>
+                <input
+                  type="radio"
+                  name="question2"
+                  value="4"
+                  checked={question2Value === "4"}
+                  onChange={handleQuestion2}
+                />
+                Gate
               </label>
             </div>
 
             <div>
-              <div>3) Explain something about MOSFETs</div>
+              <div>3) What is the threshold voltage of a MOSFET?</div>
               <label>
                 <input
                   type="radio"
@@ -150,7 +175,7 @@ export default function QuizContainer() {
                   checked={question3Value === "1"}
                   onChange={handleQuestion3}
                 />
-                This is something about MOSFETs number 1
+                The voltage at which the MOSFET turns off
               </label>
               <br />
               <label>
@@ -161,7 +186,7 @@ export default function QuizContainer() {
                   checked={question3Value === "2"}
                   onChange={handleQuestion3}
                 />
-                This is something about MOSFETs number 2
+                The voltage at which the MOSFET turns on
               </label>
               <br />
               <label>
@@ -172,12 +197,26 @@ export default function QuizContainer() {
                   checked={question3Value === "3"}
                   onChange={handleQuestion3}
                 />
-                This is something about MOSFETs number 3
+                The voltage at which the MOSFET operates at its maximum power
+              </label>
+              <br />
+              <label>
+                <input
+                  type="radio"
+                  name="question3"
+                  value="4"
+                  checked={question3Value === "4"}
+                  onChange={handleQuestion3}
+                />
+                The voltage at which the MOSFET changes its resistance
               </label>
             </div>
 
             <div>
-              <div>4) Explain something about MOSFETs</div>
+              <div>
+                4) What is the main advantage of using a MOSFET in a switching
+                application compared to a BJT?
+              </div>
               <label>
                 <input
                   type="radio"
@@ -186,7 +225,7 @@ export default function QuizContainer() {
                   checked={question4Value === "1"}
                   onChange={handleQuestion4}
                 />
-                This is something about MOSFETs number 1
+                Higher input impedance
               </label>
               <br />
               <label>
@@ -197,7 +236,7 @@ export default function QuizContainer() {
                   checked={question4Value === "2"}
                   onChange={handleQuestion4}
                 />
-                This is something about MOSFETs number 2
+                Lower switching losses
               </label>
               <br />
               <label>
@@ -208,12 +247,25 @@ export default function QuizContainer() {
                   checked={question4Value === "3"}
                   onChange={handleQuestion4}
                 />
-                This is something about MOSFETs number 3
+                Higher current gain
+              </label>
+              <br />
+              <label>
+                <input
+                  type="radio"
+                  name="question4"
+                  value="4"
+                  checked={question4Value === "4"}
+                  onChange={handleQuestion4}
+                />
+                Lower cost
               </label>
             </div>
 
             <div>
-              <div>5) Explain something about MOSFETs</div>
+              <div>
+                5) In which configuration can a MOSFET be used as an amplifier?
+              </div>
               <label>
                 <input
                   type="radio"
@@ -222,7 +274,7 @@ export default function QuizContainer() {
                   checked={question5Value === "1"}
                   onChange={handleQuestion5}
                 />
-                This is something about MOSFETs number 1
+                Common source
               </label>
               <br />
               <label>
@@ -233,7 +285,7 @@ export default function QuizContainer() {
                   checked={question5Value === "2"}
                   onChange={handleQuestion5}
                 />
-                This is something about MOSFETs number 2
+                Common gate
               </label>
               <br />
               <label>
@@ -244,7 +296,18 @@ export default function QuizContainer() {
                   checked={question5Value === "3"}
                   onChange={handleQuestion5}
                 />
-                This is something about MOSFETs number 3
+                Common drain
+              </label>
+              <br />
+              <label>
+                <input
+                  type="radio"
+                  name="question5"
+                  value="4"
+                  checked={question5Value === "4"}
+                  onChange={handleQuestion5}
+                />
+                All of the above
               </label>
             </div>
             <div>
