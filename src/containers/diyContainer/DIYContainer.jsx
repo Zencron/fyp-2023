@@ -3,6 +3,7 @@ import styles from "./DIYContainer.module.css";
 import FilledCard from "/src/components/filledCard/FilledCard";
 
 import circuit1 from "/src/assets/circuit1.jpg";
+import diyCircuit from "/src/assets/diycircuit.webp";
 
 export default function DIYContainer() {
   return (
@@ -84,7 +85,28 @@ export default function DIYContainer() {
             </div>
             <div className={styles.tableText}>1</div>
           </div>
+          <img src={diyCircuit} alt="circuit2" />
           <img src={circuit1} alt="circuit1" width={300} />
+          <div>
+            To operate the buck converter correctly, follow these steps in
+            order: <br />
+            First, connect the load to the output and a multimeter in VDC mode
+            in parallel to the load. <br />
+            Second, keep the potentiometer at its minimum position initially.{" "}
+            <br />
+            Third, power the buck converter (with 6V to 12VDC). <br />
+            Fourth, gently rotate the potentiometer to increase the voltage
+            until your desired load voltage is reached. <br />
+            Fifth, always connect the load at the output first before powering
+            the buck converter ON. <br />
+            This is because there is no feedback system in this buck converter
+            design, and without any load, the 1000uF capacitor will be charged
+            to the input voltage. If a load is connected at this point, it will
+            be subjected to higher voltage for a few milliseconds before
+            dropping to the previously set value. Lastly, this circuit is best
+            suited for fixed loads where the power consumed by the load remains
+            constant as long as it is powered ON.
+          </div>
         </div>
       </FilledCard>
     </div>
